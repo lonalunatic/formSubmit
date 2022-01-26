@@ -1,27 +1,13 @@
 <div class="container">
   <h1>Ausleihen</h1>
   <form target="_blank" action="https://formsubmit.co/lona.friessner@gmail.com" method="POST">
-    <div class="form-group">
-      <div class="form-row">
-        <div class="col">
-          <input type="text" name="name" class="form-control" placeholder="Name" required>
-        </div>
-        <div class="col">
-          <input type="email" name="email" class="form-control" placeholder="Email-Adresse" required>
-        </div>
-      </div>
-			<div class="form-group">
-	      <div class="form-row">
-	        <div class="col">
-	          <input type="text" name="signatur" class="form-control" placeholder="Signatur" required>
-	        </div>
-	        <div class="col">
-	          <input type="email" name="titel" class="form-control" placeholder="Titel des Buches" required>
-	        </div>
-	      </div>
-    </div>
-    <div class="form-group">
-      <textarea placeholder="Probleme oder Anmerkungen? Einfach hier eintragen." class="form-control" name="message" rows="10"></textarea>
+		<div class="inputs">
+	    <input type="text" name="name" class="form-control" placeholder="Name" required>
+	    <input type="email" name="email" class="form-control" placeholder="Email-Adresse" required>
+			<input type="text" name="signatur" class="form-control" placeholder="Signatur" required>
+		  <input type="text" name="titel" class="form-control" placeholder="Titel des Buches" required>
+			<input type="hidden" name="_autoresponse" value="Ausleihe erfolgreich!">
+	    <textarea placeholder="Probleme oder Anmerkungen? Einfach hier eintragen." class="form-control" name="message" rows="10"></textarea>
     </div>
     <button type="submit" class="btn btn-lg btn-dark btn-block">Jetzt ausleihen</button>
   </form>
