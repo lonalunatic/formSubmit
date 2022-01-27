@@ -1,14 +1,45 @@
-<div class="container">
-  <h1>Ausleihen</h1>
-  <form target="_blank" action="https://formsubmit.co/lona.friessner@gmail.com" method="POST">
-		<div class="inputs">
-	    <input type="text" name="name" class="form-control" placeholder="Name" required>
-	    <input type="email" name="email" class="form-control" placeholder="Email-Adresse" required>
-			<input type="text" name="signatur" class="form-control" placeholder="Signatur" required>
-		  <input type="text" name="titel" class="form-control" placeholder="Titel des Buches" required>
-			<input type="hidden" name="_autoresponse" value="Ausleihe erfolgreich!">
-	    <textarea placeholder="Probleme oder Anmerkungen? Einfach hier eintragen." class="form-control" name="message" rows="10"></textarea>
-    </div>
-    <button type="submit" class="btn btn-lg btn-dark btn-block">Jetzt ausleihen</button>
-  </form>
-</div>
+<!DOCTYPE html>
+<html lang="de" dir="ltr">
+	<head>
+		<meta charset="utf-8">
+		<title>Ausleihen und zurückgeben</title>
+	</head>
+	<body>
+		<div class="container">
+			<div class="ausleihe">
+		  <h1>Ausleihen</h1>
+		  <form target="_blank" action="https://formsubmit.co/email-to-me" method="POST">
+				<div class="inputs">
+			    <input type="text" name="Name" class="form-control" placeholder="Name" required>
+			    <input type="email" name="Email" class="form-control" placeholder="Email-Adresse" required>
+					<input type="text" name="Signatur" class="form-control" placeholder="Signatur" required>
+				  <input type="text" name="Titel" class="form-control" placeholder="Titel des Buches" required>
+					<input type="hidden" name="_autoresponse" value="Ausleihe erfolgreich!">
+					<input type="hidden" name="_subject" value="Neue Ausleihe in der Handbibliothek">
+					<!--  <input type="hidden" name="_url" value="https://yourdomain.co/contact.html">  for exact URL-->
+			    <textarea placeholder="Probleme oder Anmerkungen? Einfach hier eintragen." class="form-control" name="message" rows="10"></textarea>
+		    </div>
+		    <button type="submit" class="btn btn-lg btn-dark btn-block">Jetzt ausleihen</button>
+		  </form>
+			</div>
+
+			<div class="rueckgabe">
+			<h1>Zurückgeben</h1>
+			<form target="_blank" action="https://formsubmit.co/lona.friessner@gmail.com" method="POST">
+				<div class="inputs">
+					<input type="text" name="Name" class="form-control" placeholder="Name" required>
+					<input type="email" name="Email" class="form-control" placeholder="Email-Adresse" required>
+					<input type="text" name="Signatur" class="form-control" placeholder="Signatur" required>
+					<input type="text" name="Titel" class="form-control" placeholder="Titel des Buches" required>
+					<input type="hidden" name="_autoresponse" value="Ausleihe erfolgreich!">
+					<input type="hidden" name="_subject" value="Neue Ausleihe in der Handbibliothek">
+					<!--  <input type="hidden" name="_url" value="https://yourdomain.co/contact.html">  for exact URL-->
+					<textarea placeholder="Probleme oder Anmerkungen? Einfach hier eintragen." class="form-control" name="message" rows="10"></textarea>
+				</div>
+				<button type="submit" class="btn btn-lg btn-dark btn-block">Jetzt ausleihen</button>
+			</form>
+			</div>
+
+		</div>
+	</body>
+</html>
